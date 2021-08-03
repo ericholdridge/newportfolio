@@ -1,0 +1,24 @@
+.about {
+  .about-container {
+    padding: 0 0 100px 0;
+    .box {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      .first {
+        padding: 20px 0;
+        line-height: 1.6;
+      }
+      .second {
+        padding-bottom: 20px;
+        line-height: 1.6;
+      }
+      .third {
+        padding-bottom: 20px;
+        line-height: 1.6;
+      }
+    }
+  }
+}

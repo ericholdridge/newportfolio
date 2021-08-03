@@ -1,0 +1,46 @@
+.projects {
+  .projects-container {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    .project-image {
+      width: 100%;
+      max-width: 550px;
+      border: 2px solid green;
+    }
+    .project-info {
+      width: 100%;
+      max-width: 600px;
+      .project-heading {
+        h3 {
+          color: #fff;
+          font-size: 1.8rem;
+        }
+        p {
+          color: #86909a;
+          padding: 10px 0;
+          line-height: 1.5;
+        }
+      }
+      .project-languages {
+        padding: 10px 0 0 0;
+        h3 {
+          color: #fff;
+          font-size: 1.8rem;
+        }
+        .flex-languages {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 10px 0;
+          span {
+            margin: 0 10px;
+            color: #86909a;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
