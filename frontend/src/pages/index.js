@@ -5,12 +5,11 @@ import Projects from "../components/Sections/Projects/Projects";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   return (
     <>
       <Hero />
       <About />
-      <Projects />
+      <Projects data={data} />
     </>
   );
 };
@@ -22,6 +21,9 @@ export const query = graphql`
         description
         title
         technologies
+        challenges
+        githubURL
+        projectURL
         image {
           asset {
             url

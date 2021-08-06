@@ -1,17 +1,34 @@
 .projects {
   .projects-container {
-    padding: 100px 0;
+    padding: 60px 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    .project-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
     .project-image {
       width: 100%;
       max-width: 550px;
-      border: 2px solid green;
+      border-radius: 6px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+      }
     }
     .project-info {
       width: 100%;
       max-width: 600px;
-      .project-heading {
+      .project-heading,
+      .project-challenges {
         h3 {
           color: #fff;
           font-size: 1.8rem;
@@ -38,6 +55,20 @@
             &:first-child {
               margin-left: 0;
             }
+          }
+        }
+      }
+      .project-links {
+        padding: 20px 0 0 0;
+        a {
+          margin: 0 16px;
+          color: #fff;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: #ffaf29;
+          }
+          &:first-child {
+            margin-left: 0;
           }
         }
       }

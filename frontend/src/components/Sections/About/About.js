@@ -7,7 +7,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <secion className="about">
+    <section className="about">
       <Container className="about-container">
         <Heading headingTitle="about" />
         <div className="box">
@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <Skills />
       </Container>
-    </secion>
+    </section>
   );
 };
 
