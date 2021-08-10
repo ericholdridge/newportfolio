@@ -23,7 +23,7 @@ const Nav = () => {
         </div>
         <ul className={showNav ? "" : "hideItems"}>
           <li>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -32,7 +32,7 @@ const Nav = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">{`< Hire Me />`}</a>
+            <a href="#contact">{`< Contact />`}</a>
           </li>
         </ul>
       </Container>

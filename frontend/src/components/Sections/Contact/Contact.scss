@@ -19,7 +19,7 @@
           width: 47%;
           height: 100%;
           background: transparent;
-          border: 2px solid #ccc;
+          border: 3px solid #ccc;
           padding: 0 6px;
           color: #fff;
           font-family: "Open Sans", sans-serif;
@@ -27,7 +27,7 @@
             color: #fff;
           }
           &:focus-visible {
-            outline: 2px solid #ffaf29;
+            outline: 3px solid #ffaf29;
             border: transparent;
           }
         }
@@ -36,7 +36,7 @@
         width: 100%;
         margin: 20px 0 0 0;
         background: transparent;
-        border: 2px solid #ccc;
+        border: 3px solid #ccc;
         padding: 6px;
         color: #fff;
         font-family: "Open Sans", sans-serif;
@@ -44,7 +44,7 @@
           color: #fff;
         }
         &:focus-visible {
-          outline: 2px solid #ffaf29;
+          outline: 3px solid #ffaf29;
           border: transparent;
         }
       }
@@ -55,9 +55,12 @@
         background: #ffaf29;
         cursor: pointer;
         color: #000;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
         border: 1px solid rgb(255, 175, 41);
         transition: all 0.3s ease-in-out;
         font-weight: 600;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
         &:hover {
           background-color: #0b1e2e;
           border: 1px solid rgb(255, 175, 41);

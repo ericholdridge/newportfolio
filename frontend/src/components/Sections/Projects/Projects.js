@@ -9,7 +9,7 @@ const Projects = ({ data }) => {
   data = data.allSanityProjects.nodes;
   console.log(data);
   return (
-    <section className="projects" id="#projects">
+    <section className="projects" id="projects">
       <Heading headingTitle="projects" />
       <Container className="projects-container">
         <div className="projects-flex">

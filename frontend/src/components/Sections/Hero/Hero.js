@@ -16,11 +16,11 @@ const Hero = () => {
           <div className="box-info">
             <p className="design-info">
               I build high quality, responsive websites with clean user
-              interfaces. Mainly targeting React Javascript and other web
+              interfaces. Mainly targeting JavaScript, React, and other web
               development technologies.
             </p>
           </div>
-          <a href="/" className="letsconnect">{`< Lets connect />`}</a>
+          <a href="#contact" className="letsconnect">{`< Let's Connect />`}</a>
         </div>
       </Container>
     </section>

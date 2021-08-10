@@ -6,7 +6,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <section className="contact" id="#contact">
+    <section className="contact" id="contact">
       <Container className="contact-container">
         <Heading headingTitle="Contact" />
         <form name="contact" method="post" action="/contact">
@@ -21,7 +21,9 @@ const Contact = () => {
             placeholder="Message"
             required
           ></textarea>
-          <button className="send">Send {"/>"}</button>
+          <button className="send">
+            {"<"} Email Me {"/>"}
+          </button>
         </form>
       </Container>
     </section>

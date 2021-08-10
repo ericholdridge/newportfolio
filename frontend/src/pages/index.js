@@ -4,6 +4,7 @@ import About from "../components/Sections/About/About";
 import Hero from "../components/Sections/Hero/Hero";
 import Projects from "../components/Sections/Projects/Projects";
 import Contact from "../components/Sections/Contact/Contact";
+import Socials from "../components/Sections/Socials/Socials";
 
 const IndexPage = ({ data }) => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = ({ data }) => {
       <About />
       <Projects data={data} />
       <Contact />
+      <Socials />
     </>
   );
 };
