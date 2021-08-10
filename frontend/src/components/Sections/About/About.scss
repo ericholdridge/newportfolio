@@ -1,4 +1,5 @@
 .about {
+  width: 100%;
   .about-container {
     padding: 0 0 100px 0;
     .box {
@@ -18,6 +19,17 @@
       .third {
         padding-bottom: 20px;
         line-height: 1.6;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    .about-container {
+      padding: 0 0 70px 0;
+      .box {
+        text-align: left;
       }
     }
   }

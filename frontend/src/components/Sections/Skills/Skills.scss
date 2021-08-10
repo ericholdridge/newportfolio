@@ -8,3 +8,13 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .skills {
+    .skills-box {
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

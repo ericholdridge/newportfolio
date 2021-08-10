@@ -28,24 +28,14 @@ const Project = ({ project }) => {
         </div>
         <div className="project-links">
           <a href={project.githubURL} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="lg"
-              // color="#fff"
-              className="icon"
-            />
+            <FontAwesomeIcon icon={faGithub} size="lg" className="icon" />
           </a>
           <a
             href={project.projectURL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faTv}
-              size="lg"
-              // color="#fff"
-              className="icon"
-            />
+            <FontAwesomeIcon icon={faTv} size="lg" className="icon" />
           </a>
         </div>
       </div>

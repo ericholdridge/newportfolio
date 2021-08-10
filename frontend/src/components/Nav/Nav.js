@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../GlobalContainer/Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 // Styles
 import "./Nav.scss";
 
 const Nav = () => {
+  const [showNav, setShowNav] = useState(false);
   return (
     <nav>
       <Container className="nav-container">
-        <div className="logo">
-          <a href="/">eHoldridge</a>
+        <div className="wrapper">
+          <div className="logo">
+            <a href="/">eHoldridge</a>
+          </div>
+          <FontAwesomeIcon
+            icon={faBars}
+            size="lg"
+            className="navIcon"
+            onClick={() => setShowNav(!showNav)}
+          />
         </div>
-        <ul>
+        <ul className={showNav ? "" : "hideItems"}>
           <li>
-            <a href="/">About</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="/">Projects</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/">{`< Hire Me />`}</a>
+            <a href="#contact">{`< Hire Me />`}</a>
           </li>
         </ul>
       </Container>

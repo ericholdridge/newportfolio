@@ -6,7 +6,7 @@ import "./Hero.scss";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <Nav />
       <Container className="hero-container">
         <div className="box">
@@ -19,7 +19,6 @@ const Hero = () => {
               interfaces. Mainly targeting React Javascript and other web
               development technologies.
             </p>
-            <p className="learning-info"></p>
           </div>
           <a href="/" className="letsconnect">{`< Lets connect />`}</a>
         </div>

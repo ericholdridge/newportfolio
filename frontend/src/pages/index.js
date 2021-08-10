@@ -1,8 +1,9 @@
 import React from "react";
+import { graphql } from "gatsby";
 import About from "../components/Sections/About/About";
 import Hero from "../components/Sections/Hero/Hero";
 import Projects from "../components/Sections/Projects/Projects";
-import { graphql } from "gatsby";
+import Contact from "../components/Sections/Contact/Contact";
 
 const IndexPage = ({ data }) => {
   return (
@@ -10,6 +11,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <About />
       <Projects data={data} />
+      <Contact />
     </>
   );
 };

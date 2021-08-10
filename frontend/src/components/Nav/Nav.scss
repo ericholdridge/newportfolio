@@ -1,14 +1,26 @@
 nav {
+  width: 100%;
   padding: 2rem 0;
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo {
-      a {
-        color: #fff;
-        font-weight: 600;
-        font-size: 1.4rem;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        a {
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.4rem;
+        }
+      }
+      .navIcon {
+        color: #ffaf29;
+        cursor: pointer;
+        size: 1.4rem;
+        display: none;
       }
     }
     ul {
@@ -21,23 +33,55 @@ nav {
           font-weight: 600;
           font-size: 1rem;
         }
-        &:nth-child(4) {
-          padding: 10px 20px;
-          border-radius: 4px;
-          background-color: #ffaf29;
-          border: 1px solid rgb(255, 175, 41);
-          margin-right: 0;
-          transition: all 0.3s ease-in-out;
+        &:last-child {
           a {
             color: #000;
+            padding: 10px 20px;
+            border-radius: 4px;
+            background: #ffaf29;
+            margin-right: 0;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgb(255, 175, 41);
+            transition: all 0.3s ease-in-out;
             &:hover {
+              background-color: #0b1e2e;
+              border: 1px solid rgb(255, 175, 41);
               color: #fff;
             }
           }
-          &:hover {
-            background-color: #0b1e2e;
-            border: 1px solid rgb(255, 175, 41);
-            color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 748px) {
+  nav {
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navIcon {
+          display: block;
+        }
+      }
+      .hideItems {
+        display: none;
+      }
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+          margin: 10px 0;
+          &:last-child {
+            a {
+              padding: 6px;
+            }
           }
         }
       }
