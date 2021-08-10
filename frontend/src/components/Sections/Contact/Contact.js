@@ -9,9 +9,15 @@ const Contact = () => {
     <section className="contact" id="contact">
       <Container className="contact-container">
         <Heading headingTitle="Contact" />
-        <form name="contact" method="post" action="/contact">
+        <form
+          name="contact"
+          method="post"
+          action="/contact"
+          data-netlify="true"
+        >
           <div>
-            <input type="text" name="name" placeholder="Name" required />
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="fullname" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
           </div>
           <textarea
