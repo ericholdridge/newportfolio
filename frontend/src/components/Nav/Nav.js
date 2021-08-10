@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Container from "../GlobalContainer/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 // Styles
 import "./Nav.scss";
