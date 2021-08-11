@@ -2,12 +2,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTv } from "@fortawesome/free-solid-svg-icons";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Project = ({ project }) => {
   return (
     <div className="project-flex">
       <div className="project-image">
-        <img src={project.image.asset.url} alt={project.title} />
+        <GatsbyImage
+          image={project.image.asset.gatsbyImageData}
+          alt={project.title}
+        />
       </div>
       <div className="project-info">
         <div className="project-heading">

@@ -19,16 +19,14 @@
           width: 47%;
           height: 100%;
           background: transparent;
-          border: 3px solid #ccc;
+          border: 2px solid #ccc;
+          border-radius: 4px;
           padding: 0 6px;
           color: #fff;
+          outline: transparent;
           font-family: "Open Sans", sans-serif;
           &::placeholder {
             color: #fff;
-          }
-          &:focus-visible {
-            outline: 3px solid #ffaf29;
-            border: transparent;
           }
         }
       }
@@ -36,16 +34,14 @@
         width: 100%;
         margin: 20px 0 0 0;
         background: transparent;
-        border: 3px solid #ccc;
+        border: 2px solid #ccc;
         padding: 6px;
         color: #fff;
+        border-radius: 4px;
         font-family: "Open Sans", sans-serif;
+        outline: transparent;
         &::placeholder {
           color: #fff;
-        }
-        &:focus-visible {
-          outline: 3px solid #ffaf29;
-          border: transparent;
         }
       }
       .send {

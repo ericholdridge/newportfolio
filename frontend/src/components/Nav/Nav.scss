@@ -60,6 +60,7 @@ nav {
 @media (max-width: 748px) {
   nav {
     .nav-container {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -72,18 +73,52 @@ nav {
           display: block;
         }
       }
-      .hideItems {
-        display: none;
-      }
+      // .hideItems {
+      //   display: none;
+      // position: absolute;
+      // background: #ccc;
+      // top: 40px;
+      // left: -600px;
+      // bottom: 0;
+      // background: #000;
+      // opacity: 0;
+      // border: 2px solid green;
+      // transition: all 400ms ease-in-out;
+      // display: flex;
+      // flex-direction: column;
+      // }
+      // ul {
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   li {
+      //     margin: 10px 0;
+      //     &:last-child {
+      //       a {
+      //         padding: 6px;
+      //       }
+      //     }
+      //   }
+      // }
       ul {
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        left: -600px;
+        bottom: 0;
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
+        &.showCart {
+          display: block;
+          left: -30px;
+          opacity: 1;
+        }
         li {
-          margin: 10px 0;
+          padding: 4px 0;
           &:last-child {
-            a {
-              padding: 6px;
-            }
+            display: none;
           }
         }
       }

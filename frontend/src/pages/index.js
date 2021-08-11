@@ -7,6 +7,7 @@ import Contact from "../components/Sections/Contact/Contact";
 import Socials from "../components/Sections/Socials/Socials";
 
 const IndexPage = ({ data }) => {
+  console.log(data);
   return (
     <>
       <Hero />
@@ -30,7 +31,7 @@ export const query = graphql`
         projectURL
         image {
           asset {
-            url
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
       }

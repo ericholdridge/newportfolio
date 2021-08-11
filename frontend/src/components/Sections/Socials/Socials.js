@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../../GlobalContainer/Container";
-import Heading from "../../Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";

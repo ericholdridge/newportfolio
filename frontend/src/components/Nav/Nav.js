@@ -21,7 +21,7 @@ const Nav = () => {
             onClick={() => setShowNav(!showNav)}
           />
         </div>
-        <ul className={showNav ? "" : "hideItems"}>
+        <ul className={showNav ? "showCart" : ""}>
           <li>
             <a href="/">Home</a>
           </li>

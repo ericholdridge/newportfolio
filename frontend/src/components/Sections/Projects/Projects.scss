@@ -7,6 +7,7 @@
     .project-flex {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin-top: 100px;
       &:first-child {
         margin-top: 0;
@@ -19,7 +20,6 @@
       width: 100%;
       max-width: 550px;
       border-radius: 6px;
-      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
       img {
         width: 100%;
         height: 100%;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: 589px) and (max-width: 768px) {
+@media (min-width: 589px) and (max-width: 1040px) {
   .projects {
     .projects-container {
       .project-image {
@@ -112,18 +112,19 @@
         border-radius: 6px;
         img {
           width: 100%;
-          height: 100%;
           border-radius: 6px;
         }
       }
       .project-flex {
         flex-direction: column;
         margin-top: 50px;
+        align-items: flex-start;
         &:nth-child(even) {
           flex-direction: column;
         }
         .project-info {
           padding: 14px 0 0 0;
+          max-width: none;
           .project-heading,
           .project-challenges,
           .project-languages {
@@ -137,7 +138,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1248px) {
+@media (min-width: 1041px) and (max-width: 1250px) {
   .projects {
     .projects-container {
       .project-image {
